@@ -55,33 +55,14 @@ void modificarEstudiante() {
     int cambiar;
     cout<< "cual es tu carnet?\n";
     cin>>carnet;
-    if ( carnet == e.carnet){
-         cout<< "usuario encontrado, que deseas actualizar?\n";
-        cout<< " 1.Nombre\n";
-        cout<< " 2. carnet\n";
-        cout<< " 3. edad\n";
-        switch( cambiar ){
-
-            case 1 : 
-            cout<< "cual queres que sea tu nuevo nombre?\n";
-            cin>>e.nombre;
-            break;
-            case 2:
-            cout << " cual queres que sea tu nuevo carnet?\n";
-            cin>> e.carnet;
-            break;
-            case 3:
-            cout << " cual es tu nueva edad?\n";
-            cin>> e.edad;
-            break;
-            default:
-            cout<< " tu opcion no esta disponible";
-            break;
-        }
-
-    }else {
-        cout<<" usuario no encontrado, intentelo de nuevo\n";
-       
+    if ( e.carnet == carnet){
+         cout<< "usuario encontrado\n";
+         cout << "Nombre (sin espacios): ";
+    cin >> e.nombre;
+    cout << "Carnet: ";
+    cin >> e.carnet;
+    cout << "Edad: ";
+    cin >> e.edad;
     }
   
     
