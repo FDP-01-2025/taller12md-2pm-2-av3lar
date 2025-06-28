@@ -52,7 +52,6 @@ void modificarEstudiante() {
     ifstream archivo("estudiante.txt");
     Estudiante e;
     string carnet;
-    int cambiar;
     cout<< "cual es tu carnet?\n";
     cin>>carnet;
     if ( e.carnet == carnet){
@@ -63,6 +62,8 @@ void modificarEstudiante() {
     cin >> e.carnet;
     cout << "Edad: ";
     cin >> e.edad;
+    }else{
+        cout<< " usuario no encontrado\n";
     }
   
     
