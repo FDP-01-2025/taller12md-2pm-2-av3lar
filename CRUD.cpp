@@ -49,7 +49,7 @@ void mostrarEstudiantes() {
 // -----------------------------
 // 👇 TU TAREA: Completa esta función (UPDATE)
 void modificarEstudiante() {
-    ifstream archivo("estudiantes.txt");
+    ifstream archivo("estudiante.txt");
     Estudiante e;
     string carnet;
     int cambiar;
@@ -83,6 +83,7 @@ void modificarEstudiante() {
         cout<<" usuario no encontrado, intentelo de nuevo\n";
        
     }
+  
     
     archivo.close( );
     // Debes permitir actualizar nombre, carnet y/o edad
